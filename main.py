@@ -7,7 +7,7 @@ wsgi_app = app.wsgi_app
 
 @app.errorhandler(404)
 def render_not_found(_):
-    return "Ошибка 404, попробуйте снова или позже", 404
+    return "Ошибка 404, Такой страницы не существует :(", 404
 
 
 @app.route("/")
